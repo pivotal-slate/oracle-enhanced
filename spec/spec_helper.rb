@@ -29,7 +29,7 @@ require 'active_record/log_subscriber'
 
 require 'logger'
 
-require 'active_record/connection_adapters/oracle_enhanced_adapter'
+require 'active_record/connection_adapters/oracleenhanced_adapter'
 require 'ruby-plsql'
 
 module LoggerSpecHelper

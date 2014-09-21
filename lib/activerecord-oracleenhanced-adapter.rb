@@ -9,7 +9,7 @@ if defined?(::Rails::Railtie)
         end
 
         ActiveSupport.on_load(:active_record) do
-          require 'active_record/connection_adapters/oracle_enhanced_adapter'
+          require 'active_record/connection_adapters/oracleenhanced_adapter'
 
           # Cache column descriptions between requests in test and production environments
           if Rails.env.test? || Rails.env.production?

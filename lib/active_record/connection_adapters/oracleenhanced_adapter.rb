@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# oracle_enhanced_adapter.rb -- ActiveRecord adapter for Oracle 8i, 9i, 10g, 11g
+# oracleenhanced_adapter.rb -- ActiveRecord adapter for Oracle 8i, 9i, 10g, 11g
 #
 # Authors or original oracle_adapter: Graham Jenkins, Michael Schoen
 #
@@ -141,7 +141,7 @@ end
 module ActiveRecord
   module ConnectionHandling #:nodoc:
     # Establishes a connection to the database that's used by all Active Record objects.
-    def oracle_enhanced_connection(config) #:nodoc:
+    def oracleenhanced_connection(config) #:nodoc:
       if config[:emulate_oracle_adapter] == true
         # allows the enhanced adapter to look like the OracleAdapter. Useful to pick up
         # conditionals in the rails activerecord test suite
@@ -406,7 +406,7 @@ module ActiveRecord
         Arel::Visitors::Oracle.new(pool)
       end
 
-      ADAPTER_NAME = 'OracleEnhanced'.freeze
+      ADAPTER_NAME = 'Oracleenhanced'.freeze
 
       def adapter_name #:nodoc:
         ADAPTER_NAME
